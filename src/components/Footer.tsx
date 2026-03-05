@@ -32,9 +32,11 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold mb-6">Ontwikkelaars</h4>
             <ul className="space-y-4">
-              <li className="flex items-center gap-2 group cursor-pointer">
-                <ArrowRight size={16} className="text-teal-500 group-hover:translate-x-1 transition-transform" />
-                <span className="group-hover:text-white transition-colors">Metropool vastgoedontwikkeling</span>
+              <li>
+                <a href="https://metropoolvastgoedontwikkeling.nl/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 group cursor-pointer">
+                  <ArrowRight size={16} className="text-teal-500 group-hover:translate-x-1 transition-transform" />
+                  <span className="group-hover:text-white transition-colors">Metropool vastgoedontwikkeling</span>
+                </a>
               </li>
               <li className="flex items-center gap-2 group cursor-pointer">
                 <ArrowRight size={16} className="text-teal-500 group-hover:translate-x-1 transition-transform" />

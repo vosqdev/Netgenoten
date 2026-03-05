@@ -44,7 +44,7 @@ const networks = [
     textColor: 'text-amber-600',
     description: 'Duurzame, passende verbindingen met de omgeving op meerdere niveaus.',
     points: ['Koppelkansen energienetwerk', 'Slimme mobiliteit en deelvervoer', 'Logische verkeersroutes', 'Solarparking'],
-    image: 'https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=2340&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=2344&auto=format&fit=crop'
   }
 ];
 
