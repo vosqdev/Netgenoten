@@ -18,7 +18,7 @@ export default function Footer() {
               </span>
             </a>
             <p className="max-w-md text-slate-400 mb-8">
-              {t('Ook interesse in een regeneratieve gebiedsontwikkeling in uw Gemeente. Of samen bouwen we aan een duurzame, sociale en energie-positieve toekomst.', 'Also interested in regenerative area development in your Municipality. Or together we build a sustainable, social and energy-positive future.')}
+              {t('Ook interesse in een regeneratieve gebiedsontwikkeling in uw Gemeente. Of samen bouwen aan een duurzame, sociale en energie-positieve toekomst. Neem contact op met de ontwikkelaars.', 'Also interested in regenerative area development in your Municipality. Or building a sustainable, social and energy-positive future together. Contact the developers.')}
             </p>
           </div>
 
@@ -31,9 +31,11 @@ export default function Footer() {
                   <span className="group-hover:text-white transition-colors">Metropool vastgoedontwikkeling</span>
                 </a>
               </li>
-              <li className="flex items-center gap-2 group cursor-pointer">
-                <ArrowRight size={16} className="text-teal-500 group-hover:translate-x-1 transition-transform" />
-                <span className="group-hover:text-white transition-colors">Circul8 development</span>
+              <li>
+                <a href="https://www.c8.nl/development-bv.html" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 group cursor-pointer">
+                  <ArrowRight size={16} className="text-teal-500 group-hover:translate-x-1 transition-transform" />
+                  <span className="group-hover:text-white transition-colors">Circul8 development</span>
+                </a>
               </li>
             </ul>
           </div>
