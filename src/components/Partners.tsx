@@ -9,17 +9,23 @@ export default function Partners() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-3xl font-bold text-slate-900 uppercase tracking-wide mb-8">
-            {t('Op weg naar de toekomst', 'Heading into the future')}
+            {t('Het ontstaan van Netgenoten', 'The origin of Netgenoten')}
           </h2>
           <div className="text-slate-600 max-w-4xl mx-auto space-y-6 text-lg leading-relaxed text-left md:text-center">
             <p>
-              {t('Netgenoten is een gezamenlijke conceptontwikkeling van Circul8 development en Metropool Vastgoedontwikkeling. Patrick is al jarenlang actief in grootschalige gebiedsontwikkeling voor diverse opdrachtgevers, terwijl Hein vanuit Metropool Vastgoedontwikkeling werkt aan mixed-use vastgoed opgaven waarbij ook retail concepten zoals Lidl supermarkten.', 'Netgenoten is a joint concept development by Circul8 development and Metropool Vastgoedontwikkeling. Patrick has been active in large-scale area development for various clients for years, while Hein works from Metropool Vastgoedontwikkeling on mixed-use real estate assignments including retail concepts such as Lidl supermarkets.')}
+              {t('Partijen werkten jarenlang ieder vanuit hun eigen rol aan gebieds- en vastgoedontwikkeling. Ook aan grootschalige gebiedsopgaven waar de uitdagingen rond wonen, werken en infrastructuur steeds complexer werden.', 'For years, parties worked from their own roles on area and real estate development. Also on large-scale area assignments where the challenges around living, working and infrastructure became increasingly complex.')}
             </p>
             <p>
-              {t('In 2025 hebben zij de krachten gebundeld om vastgelopen opgaven op het gebied van wonen, werken en energie opnieuw in beweging te brengen van innovatie en ketensamenwerking. Vanuit die gezamenlijke ambitie is het concept Netgenoten ontstaan.', 'In 2025, they joined forces to get stalled assignments in the field of living, working and energy moving again through innovation and chain collaboration. The Netgenoten concept originated from this shared ambition.')}
+              {t('In de projecten zagen we hetzelfde patroon terugkomen. De opgaven rond wonen, energie en mobiliteit werden steeds urgenter, maar oplossingen bleven vaak versnipperd. Projecten liepen vast door verschillende belangen, afzonderlijke systemen en een gebrek aan samenwerking in de keten. Tegelijkertijd zagen we dat juist daar de sleutel lag: in het verbinden van partijen, technologie en systemen.', 'In the projects, we saw the same pattern recurring. The challenges around housing, energy and mobility became increasingly urgent, but solutions often remained fragmented. Projects stalled due to different interests, separate systems and a lack of collaboration in the chain. At the same time, we saw that the key lay precisely there: in connecting parties, technology and systems.')}
             </p>
             <p>
-              {t('Door samen te werken met ervaren partners vanuit de bouw en ontwikkeling verbinden wij vastgoed en mobiliteit met de energietransitie. Zo ontwikkelen we toekomstbestendige gebieden waarin wonen, energie en leefkwaliteit hand in hand gaan \u2013 met als doel een groenere, gezondere en duurzamere leefomgeving.', 'By collaborating with experienced partners from construction and development, we connect real estate and mobility with the energy transition. In this way, we develop future-proof areas in which living, energy and quality of life go hand in hand \u2013 with the aim of a greener, healthier and more sustainable living environment.')}
+              {t('In 2025 besloten we onze ervaringen en netwerk samen te brengen. Onze overtuiging is dat gebiedsontwikkeling alleen toekomstbestendig kan zijn als vastgoed, mobiliteit, landschap en energie vanaf het begin in samenhang worden ontwikkeld. Niet als losse onderdelen, maar als één integraal systeem.', 'In 2025, we decided to bring our experiences and network together. Our conviction is that area development can only be future-proof if real estate, mobility, landscape and energy are developed in cohesion from the start. Not as separate parts, but as one integral system.')}
+            </p>
+            <p>
+              {t('Vanuit die gedachte ontstond Netgenoten. Een concept waarin ontwikkelaars, bouwers en energiepartners samenwerken aan nieuwe oplossingen voor gebieden die vastgelopen zijn of opnieuw vorm moeten krijgen. Door innovatie te combineren met sterke ketensamenwerking brengen zij beweging in complexe opgaven.', 'Netgenoten originated from this idea. A concept in which developers, builders and energy partners collaborate on new solutions for areas that have stalled or need to be reshaped. By combining innovation with strong chain collaboration, they bring movement to complex assignments.')}
+            </p>
+            <p>
+              {t('Het doel is helder: gebieden ontwikkelen waarin wonen, energie en leefkwaliteit elkaar versterken. Toekomstbestendig, duurzaam en gebouwd op samenwerking.', 'The goal is clear: to develop areas in which living, energy and quality of life reinforce each other. Future-proof, sustainable and built on collaboration.')}
             </p>
           </div>
         </div>
