@@ -8,10 +8,10 @@ export default function ProjectDetails() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-teal-600 font-semibold tracking-wide uppercase text-sm">Projecten</span>
           <h2 className="text-4xl font-bold text-slate-900 mt-3 mb-6">
-            Pilot: Bergen Nesdijk
+            Pilot: casestudy Bergen & Dronten
           </h2>
           <p className="text-lg text-slate-600">
-            De eerste toepassing van het Netgenoten concept. Een strategische locatie aan de rand van Bergen waar wonen, natuur en energie samenkomen.
+            De eerste toepassing van het Netgenoten concept. Een tweetal strategische locaties in Noord Holland en Flevoland aan de rand van de dorpen waar wonen, natuur en energie samenkomen.
           </p>
         </div>
 
