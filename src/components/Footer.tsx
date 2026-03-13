@@ -42,12 +42,6 @@ export default function Footer() {
                 <ArrowRight size={16} className="text-teal-500 group-hover:translate-x-1 transition-transform" />
                 <span className="group-hover:text-white transition-colors">Circul8 development</span>
               </li>
-              <li>
-                <a href="https://www.vovon.nl" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 group cursor-pointer">
-                  <ArrowRight size={16} className="text-teal-500 group-hover:translate-x-1 transition-transform" />
-                  <span className="group-hover:text-white transition-colors">VOVON development</span>
-                </a>
-              </li>
             </ul>
           </div>
 

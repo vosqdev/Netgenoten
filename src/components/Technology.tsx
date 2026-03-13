@@ -50,7 +50,7 @@ export default function Technology() {
                   <Car size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Mobiliteit & Solarparking</h3>
+                  <h3 className="text-xl font-bold mb-2">Mobiliteit, Solarparking en laadinfrastructuur</h3>
                   <p className="text-slate-400">
                     De buurthub fungeert als energiehub met solarparking en laadinfra voor deelvervoer. Auto's als batterij voor de wijk.
                   </p>
@@ -68,9 +68,10 @@ export default function Technology() {
             <div className="aspect-square rounded-full bg-gradient-to-tr from-teal-500/20 to-blue-500/20 absolute -inset-4 blur-3xl" />
             <div className="relative rounded-3xl overflow-hidden border border-slate-700 shadow-2xl bg-slate-800">
               <img 
-                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2342&auto=format&fit=crop" 
+                src="https://image2url.com/r2/default/images/1773388125029-9509a4de-0b90-48fb-82f9-b4c5816112a6.jpg" 
                 alt="Solar Energy System" 
                 className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-500"
+                referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-slate-900 to-transparent">
                 <div className="flex items-center gap-2 text-teal-400 font-mono text-sm mb-2">

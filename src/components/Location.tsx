@@ -9,7 +9,7 @@ export default function Location() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/5]">
               {/* Map of Netherlands */}
               <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Netherlands_location_map_-_2019.svg/800px-Netherlands_location_map_-_2019.svg.png" 
+                src="https://image2url.com/r2/default/images/1773386510018-7c70f855-9f44-4982-835a-ce1ef776505f.png" 
                 alt="Kaart van Nederland" 
                 className="w-full h-full object-contain p-4"
                 referrerPolicy="no-referrer"

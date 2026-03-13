@@ -23,9 +23,10 @@ export default function ProjectDetails() {
           >
             <div className="h-48 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2340&auto=format&fit=crop" 
-                alt="Modern Housing" 
+                src="https://image2url.com/r2/default/images/1773386203611-f54c8713-db9a-4de2-a43d-6591ce1ce450.png" 
+                alt="Typical Dutch Housing" 
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                referrerPolicy="no-referrer"
               />
             </div>
             <div className="p-6">
@@ -47,9 +48,10 @@ export default function ProjectDetails() {
           >
             <div className="h-48 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?q=80&w=2340&auto=format&fit=crop" 
+                src="https://image2url.com/r2/default/images/1773386052169-f17ad841-48a1-46d5-a8a9-dd74b14eef34.png" 
                 alt="Community Hub" 
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                referrerPolicy="no-referrer"
               />
             </div>
             <div className="p-6">
@@ -71,9 +73,10 @@ export default function ProjectDetails() {
           >
             <div className="h-48 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2532&auto=format&fit=crop" 
+                src="https://image2url.com/r2/default/images/1773386257231-d642e9d5-fd98-4031-be00-cab20a7a50c7.png" 
                 alt="Landscape Plan" 
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                referrerPolicy="no-referrer"
               />
             </div>
             <div className="p-6">

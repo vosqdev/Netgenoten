@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Leaf, Users, Zap, Bike } from 'lucide-react';
+import { Leaf, Users, Zap, Recycle } from 'lucide-react';
 
 const features = [
   {
@@ -23,7 +23,7 @@ const features = [
   {
     title: "Klimaatadaptief en circulair",
     description: "Gebouwd voor de toekomst met respect voor water, bodem en materialen.",
-    icon: Bike,
+    icon: Recycle,
     color: "bg-amber-100 text-amber-600",
   },
 ];
@@ -76,9 +76,10 @@ export default function Vision() {
           >
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2532&auto=format&fit=crop" 
-                alt="Diverse community group" 
+                src="https://image2url.com/r2/default/images/1773387762321-efe9d054-4416-46d4-be6c-541782d604bf.png" 
+                alt="Dutch neighborhood community" 
                 className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
               />
             </div>
             {/* Floating Card */}
