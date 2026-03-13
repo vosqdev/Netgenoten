@@ -1,20 +1,23 @@
 import { Check } from 'lucide-react';
-
-const steps = [
-  { title: "Idee & Concept", status: "completed" },
-  { title: "Omgevingstafel", status: "current" },
-  { title: "Participatie", status: "upcoming" },
-  { title: "Stedenbouw & Architectuur", status: "upcoming" },
-  { title: "Aanvraag Omgevingsplan", status: "upcoming" },
-];
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Process() {
+  const { t } = useLanguage();
+
+  const steps = [
+    { title: t("Idee & Concept", "Idea & Concept"), status: "completed" },
+    { title: t("Omgevingstafel", "Environment Table"), status: "current" },
+    { title: t("Participatie", "Participation"), status: "upcoming" },
+    { title: t("Stedenbouw & Architectuur", "Urban Planning & Architecture"), status: "upcoming" },
+    { title: t("Aanvraag Omgevingsplan", "Application Environment Plan"), status: "upcoming" },
+  ];
+
   return (
     <section className="py-20 bg-white border-t border-slate-100">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-slate-900">Ontwerpend Onderzoek</h2>
-          <p className="text-slate-500 mt-2">De weg naar realisatie</p>
+          <h2 className="text-3xl font-bold text-slate-900">{t('Ontwerpend Onderzoek', 'Design Research')}</h2>
+          <p className="text-slate-500 mt-2">{t('De weg naar realisatie', 'The road to realization')}</p>
         </div>
 
         <div className="relative">

@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section id="home" className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -22,13 +25,13 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <span className="inline-block py-1 px-3 rounded-full bg-teal-500/20 border border-teal-400/30 text-teal-300 text-sm font-medium mb-6 backdrop-blur-sm">
-            Ontmoet Ons
+            {t('Ontmoet Ons', 'Meet Us')}
           </span>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 leading-tight">
             Netgenoten
           </h1>
           <p className="text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed mb-10">
-            Regeneratieve gebiedsontwikkeling voor een duurzame toekomst.
+            {t('Regeneratieve gebiedsontwikkeling voor een duurzame toekomst.', 'Regenerative area development for a sustainable future.')}
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -36,13 +39,13 @@ export default function Hero() {
               href="#visie"
               className="px-8 py-4 bg-teal-500 hover:bg-teal-400 text-white rounded-full font-semibold transition-all shadow-lg shadow-teal-500/25 w-full sm:w-auto"
             >
-              Ontdek de visie
+              {t('Ontdek de visie', 'Discover the vision')}
             </a>
             <a
               href="#netwerken"
               className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-full font-semibold backdrop-blur-sm transition-all w-full sm:w-auto"
             >
-              De 4 Netwerken
+              {t('De 4 Netwerken', 'The 4 Networks')}
             </a>
           </div>
         </motion.div>

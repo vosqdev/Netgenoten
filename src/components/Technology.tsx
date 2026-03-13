@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { Battery, Zap, Car, Share2 } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Technology() {
+  const { t } = useLanguage();
+
   return (
     <section id="technology" className="py-24 bg-slate-900 text-white overflow-hidden">
       <div className="container mx-auto px-6">
@@ -11,13 +14,14 @@ export default function Technology() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-teal-400 font-semibold tracking-wide uppercase text-sm">Technologie & Energie</span>
+            <span className="text-teal-400 font-semibold tracking-wide uppercase text-sm">
+              {t('Technologie & Energie', 'Technology & Energy')}
+            </span>
             <h2 className="text-4xl font-bold mt-3 mb-6">
-              Energiesysteem van de Toekomst
+              {t('Energiesysteem van de Toekomst', 'Energy System of the Future')}
             </h2>
             <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-              Slimme combinaties van energievragers en dragers zorgen voor een energiepositief en -onafhankelijk buurtschap. 
-              We ontlasten het openbare net door slim energiemanagement.
+              {t('Slimme combinaties van energievragers en dragers zorgen voor een energiepositief en -onafhankelijk buurtschap. We ontlasten het openbare net door slim energiemanagement.', 'Smart combinations of energy demanders and carriers ensure an energy-positive and independent neighborhood. We relieve the public grid through smart energy management.')}
             </p>
 
             <div className="space-y-8">
@@ -26,9 +30,9 @@ export default function Technology() {
                   <Zap size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Lokale Opwek & Micro Grids</h3>
+                  <h3 className="text-xl font-bold mb-2">{t('Lokale Opwek & Micro Grids', 'Local Generation & Micro Grids')}</h3>
                   <p className="text-slate-400">
-                    Maximaal gebruik van zon op daken en in de openbare ruimte. Een lokaal micro-grid zorgt voor minder belasting van het hoofdnet.
+                    {t('Maximaal gebruik van zon op daken en in de openbare ruimte. Een lokaal micro-grid zorgt voor minder belasting van het hoofdnet.', 'Maximum use of solar on roofs and in public spaces. A local micro-grid ensures less load on the main grid.')}
                   </p>
                 </div>
               </div>
@@ -38,9 +42,9 @@ export default function Technology() {
                   <Battery size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Slimme Opslag (EMS)</h3>
+                  <h3 className="text-xl font-bold mb-2">{t('Slimme Opslag (EMS)', 'Smart Storage (EMS)')}</h3>
                   <p className="text-slate-400">
-                    Collectieve batterijen en een slim energiemanagementsysteem (EMS) balanceren vraag en aanbod in real-time.
+                    {t('Collectieve batterijen en een slim energiemanagementsysteem (EMS) balanceren vraag en aanbod in real-time.', 'Collective batteries and a smart energy management system (EMS) balance supply and demand in real-time.')}
                   </p>
                 </div>
               </div>
@@ -50,9 +54,9 @@ export default function Technology() {
                   <Car size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Mobiliteit, Solarparking en laadinfrastructuur</h3>
+                  <h3 className="text-xl font-bold mb-2">{t('Mobiliteit, Solarparking en laadinfrastructuur', 'Mobility, Solar Parking and Charging Infrastructure')}</h3>
                   <p className="text-slate-400">
-                    De buurthub fungeert als energiehub met solarparking en laadinfra voor deelvervoer. Auto's als batterij voor de wijk.
+                    {t("De buurthub fungeert als energiehub met solarparking en laadinfra voor deelvervoer. Auto's als batterij voor de wijk.", "The community hub acts as an energy hub with solar parking and charging infrastructure for shared transport. Cars as a battery for the neighborhood.")}
                   </p>
                 </div>
               </div>
@@ -82,9 +86,9 @@ export default function Technology() {
                   <div className="h-full bg-teal-500 w-3/4" />
                 </div>
                 <div className="flex justify-between text-xs text-slate-400 mt-2 font-mono">
-                  <span>Opwek: 100%</span>
-                  <span>Verbruik: 30%</span>
-                  <span>Opslag: 70%</span>
+                  <span>{t('Opwek: 100%', 'Generation: 100%')}</span>
+                  <span>{t('Verbruik: 30%', 'Consumption: 30%')}</span>
+                  <span>{t('Opslag: 70%', 'Storage: 70%')}</span>
                 </div>
               </div>
             </div>

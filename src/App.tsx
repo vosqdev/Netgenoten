@@ -10,25 +10,28 @@ import Process from './components/Process';
 import Stats from './components/Stats';
 import Location from './components/Location';
 import Footer from './components/Footer';
+import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white font-sans text-slate-900 selection:bg-teal-100 selection:text-teal-900">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Vision />
-        <NetworkGrid />
-        <Technology />
-        <ProjectDetails />
-        <Process />
-        <Stats />
-        <Location />
-        <Partners />
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen bg-white font-sans text-slate-900 selection:bg-teal-100 selection:text-teal-900">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Vision />
+          <NetworkGrid />
+          <Technology />
+          <ProjectDetails />
+          <Process />
+          <Stats />
+          <Location />
+          <Partners />
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 

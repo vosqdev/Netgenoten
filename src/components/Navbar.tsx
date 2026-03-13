@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Share2 } from 'lucide-react';
+import { Menu, X, Share2, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,11 +33,11 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { name: 'Home', href: '#home', id: 'home' },
-    { name: 'Over ons', href: '#about', id: 'about' },
-    { name: 'Visie', href: '#visie', id: 'visie' },
-    { name: 'Technologie', href: '#technology', id: 'technology' },
-    { name: 'Projecten', href: '#projects', id: 'projects' },
+    { name: t('Home', 'Home'), href: '#home', id: 'home' },
+    { name: t('Over ons', 'About us'), href: '#about', id: 'about' },
+    { name: t('Visie', 'Vision'), href: '#visie', id: 'visie' },
+    { name: t('Technologie', 'Technology'), href: '#technology', id: 'technology' },
+    { name: t('Projecten', 'Projects'), href: '#projects', id: 'projects' },
   ];
 
   return (
@@ -58,7 +60,7 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-8">
           {links.map((link) => (
             <a
-              key={link.name}
+              key={link.id}
               href={link.href}
               className={`text-sm font-medium transition-colors relative ${
                 activeSection === link.id
@@ -88,17 +90,37 @@ export default function Navbar() {
           >
             Contact
           </a>
+          <button
+            onClick={() => setLanguage(language === 'nl' ? 'en' : 'nl')}
+            className={`flex items-center gap-1 text-sm font-medium transition-colors ${
+              scrolled ? 'text-slate-600 hover:text-teal-600' : 'text-white/90 hover:text-white'
+            }`}
+          >
+            <Globe size={16} />
+            {language.toUpperCase()}
+          </button>
         </div>
 
         {/* Mobile Toggle */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className={`lg:hidden p-2 rounded-lg ${
-            scrolled ? 'text-slate-900' : 'text-white'
-          }`}
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center gap-4 lg:hidden">
+          <button
+            onClick={() => setLanguage(language === 'nl' ? 'en' : 'nl')}
+            className={`flex items-center gap-1 text-sm font-medium transition-colors ${
+              scrolled ? 'text-slate-600 hover:text-teal-600' : 'text-white/90 hover:text-white'
+            }`}
+          >
+            <Globe size={16} />
+            {language.toUpperCase()}
+          </button>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className={`p-2 rounded-lg ${
+              scrolled ? 'text-slate-900' : 'text-white'
+            }`}
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -113,7 +135,7 @@ export default function Navbar() {
             <div className="flex flex-col gap-4">
               {links.map((link) => (
                 <a
-                  key={link.name}
+                  key={link.id}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className={`font-medium ${

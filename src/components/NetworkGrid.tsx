@@ -1,61 +1,64 @@
 import { motion } from 'framer-motion';
 import { Zap, Users, Trees, Car } from 'lucide-react';
-
-const networks = [
-  {
-    id: 'energie',
-    title: 'Energie',
-    icon: Zap,
-    color: 'bg-blue-600',
-    lightColor: 'bg-blue-50',
-    textColor: 'text-blue-600',
-    description: 'Slimme combinaties van energievragers en dragers zorgen voor een energiepositief en -onafhankelijk buurtschap.',
-    points: ['Lokale opwek', 'Slimme netten en opslag', 'Energie delen', 'Micro grids'],
-    image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2342&auto=format&fit=crop'
-  },
-  {
-    id: 'gemeenschap',
-    title: 'Gemeenschap',
-    icon: Users,
-    color: 'bg-pink-600',
-    lightColor: 'bg-pink-50',
-    textColor: 'text-pink-600',
-    description: 'Een goede stedenbouwkundige opzet en inzet op gezamenlijke plekken zorgt voor een hechte gemeenschap.',
-    points: ['Voor alle lagen van de samenleving', 'Plekken die uitnodigen tot samenkomen', 'Gezond samenleven', 'Sociale cohesie'],
-    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2340&auto=format&fit=crop'
-  },
-  {
-    id: 'landschap',
-    title: 'Landschap',
-    icon: Trees,
-    color: 'bg-emerald-500',
-    lightColor: 'bg-emerald-50',
-    textColor: 'text-emerald-600',
-    description: 'Een doordacht ontwerp zorgt ervoor dat het landschap omarmt en versterkt wordt, meekleurend met de identiteit van de plek.',
-    points: ['Bodem en water zijn leidend', 'Natuurinclusief en biodivers', 'Klimaatadaptief', 'Identiteit van de plek'],
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2340&auto=format&fit=crop'
-  },
-  {
-    id: 'mobiliteit',
-    title: 'Mobiliteit',
-    icon: Car,
-    color: 'bg-amber-400',
-    lightColor: 'bg-amber-50',
-    textColor: 'text-amber-600',
-    description: 'Duurzame, passende verbindingen met de omgeving op meerdere niveaus.',
-    points: ['Koppelkansen energienetwerk', 'Slimme mobiliteit en deelvervoer', 'Logische verkeersroutes', 'Solarparking en laadinfrastructuur'],
-    image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=2344&auto=format&fit=crop'
-  }
-];
+import { useLanguage } from '../context/LanguageContext';
 
 export default function NetworkGrid() {
+  const { t } = useLanguage();
+
+  const networks = [
+    {
+      id: 'energie',
+      title: t('Energie', 'Energy'),
+      icon: Zap,
+      color: 'bg-blue-600',
+      lightColor: 'bg-blue-50',
+      textColor: 'text-blue-600',
+      description: t('Slimme combinaties van energievragers en dragers zorgen voor een energiepositief en -onafhankelijk buurtschap.', 'Smart combinations of energy demanders and carriers ensure an energy-positive and independent neighborhood.'),
+      points: [t('Lokale opwek', 'Local generation'), t('Slimme netten en opslag', 'Smart grids and storage'), t('Energie delen', 'Energy sharing'), t('Micro grids', 'Micro grids')],
+      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2342&auto=format&fit=crop'
+    },
+    {
+      id: 'gemeenschap',
+      title: t('Gemeenschap', 'Community'),
+      icon: Users,
+      color: 'bg-pink-600',
+      lightColor: 'bg-pink-50',
+      textColor: 'text-pink-600',
+      description: t('Een goede stedenbouwkundige opzet en inzet op gezamenlijke plekken zorgt voor een hechte gemeenschap.', 'A good urban design and focus on shared spaces ensure a close-knit community.'),
+      points: [t('Voor alle lagen van de samenleving', 'For all layers of society'), t('Plekken die uitnodigen tot samenkomen', 'Places that invite gathering'), t('Gezond samenleven', 'Healthy living together'), t('Sociale cohesie', 'Social cohesion')],
+      image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2340&auto=format&fit=crop'
+    },
+    {
+      id: 'landschap',
+      title: t('Landschap', 'Landscape'),
+      icon: Trees,
+      color: 'bg-emerald-500',
+      lightColor: 'bg-emerald-50',
+      textColor: 'text-emerald-600',
+      description: t('Een doordacht ontwerp zorgt ervoor dat het landschap omarmt en versterkt wordt, meekleurend met de identiteit van de plek.', 'A thoughtful design ensures that the landscape is embraced and strengthened, coloring with the identity of the place.'),
+      points: [t('Bodem en water zijn leidend', 'Soil and water are leading'), t('Natuurinclusief en biodivers', 'Nature-inclusive and biodiverse'), t('Klimaatadaptief', 'Climate-adaptive'), t('Identiteit van de plek', 'Identity of the place')],
+      image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2340&auto=format&fit=crop'
+    },
+    {
+      id: 'mobiliteit',
+      title: t('Mobiliteit', 'Mobility'),
+      icon: Car,
+      color: 'bg-amber-400',
+      lightColor: 'bg-amber-50',
+      textColor: 'text-amber-600',
+      description: t('Duurzame, passende verbindingen met de omgeving op meerdere niveaus.', 'Sustainable, appropriate connections with the environment on multiple levels.'),
+      points: [t('Koppelkansen energienetwerk', 'Linking opportunities energy network'), t('Slimme mobiliteit en deelvervoer', 'Smart mobility and shared transport'), t('Logische verkeersroutes', 'Logical traffic routes'), t('Solarparking en laadinfrastructuur', 'Solar parking and charging infrastructure')],
+      image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=2344&auto=format&fit=crop'
+    }
+  ];
+
   return (
     <section id="netwerken" className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">Vier Netwerken</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-4">{t('Vier Netwerken', 'Four Networks')}</h2>
           <p className="text-lg text-slate-600">
-            Het concept Netgenoten verbindt vier essentiële pijlers om een toekomstbestendige leefomgeving te creëren.
+            {t('Het concept Netgenoten verbindt vier essentiële pijlers om een toekomstbestendige leefomgeving te creëren.', 'The Netgenoten concept connects four essential pillars to create a future-proof living environment.')}
           </p>
         </div>
 

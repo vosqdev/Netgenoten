@@ -1,34 +1,37 @@
 import { motion } from 'framer-motion';
 import { Leaf, Users, Zap, Recycle } from 'lucide-react';
-
-const features = [
-  {
-    title: "Regeneratieve gebiedsontwikkeling",
-    description: "Een buurt die meer teruggeeft dan het neemt, met focus op herstel van natuur en sociale structuren.",
-    icon: Leaf,
-    color: "bg-emerald-100 text-emerald-600",
-  },
-  {
-    title: "Energiepositieve woonomgeving",
-    description: "Zelfvoorzienend in energie door slimme netwerken, lokale opwek en opslag.",
-    icon: Zap,
-    color: "bg-blue-100 text-blue-600",
-  },
-  {
-    title: "Sterke sociale samenhang",
-    description: "Voorzieningen dichtbij en gedeelde ruimtes die ontmoeting stimuleren.",
-    icon: Users,
-    color: "bg-pink-100 text-pink-600",
-  },
-  {
-    title: "Klimaatadaptief en circulair",
-    description: "Gebouwd voor de toekomst met respect voor water, bodem en materialen.",
-    icon: Recycle,
-    color: "bg-amber-100 text-amber-600",
-  },
-];
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Vision() {
+  const { t } = useLanguage();
+
+  const features = [
+    {
+      title: t("Regeneratieve gebiedsontwikkeling", "Regenerative area development"),
+      description: t("Een buurt die meer teruggeeft dan het neemt, met focus op herstel van natuur en sociale structuren.", "A neighborhood that gives back more than it takes, focusing on the restoration of nature and social structures."),
+      icon: Leaf,
+      color: "bg-emerald-100 text-emerald-600",
+    },
+    {
+      title: t("Energiepositieve woonomgeving", "Energy-positive living environment"),
+      description: t("Zelfvoorzienend in energie door slimme netwerken, lokale opwek en opslag.", "Self-sufficient in energy through smart networks, local generation, and storage."),
+      icon: Zap,
+      color: "bg-blue-100 text-blue-600",
+    },
+    {
+      title: t("Sterke sociale samenhang", "Strong social cohesion"),
+      description: t("Voorzieningen dichtbij en gedeelde ruimtes die ontmoeting stimuleren.", "Nearby facilities and shared spaces that stimulate interaction."),
+      icon: Users,
+      color: "bg-pink-100 text-pink-600",
+    },
+    {
+      title: t("Klimaatadaptief en circulair", "Climate-adaptive and circular"),
+      description: t("Gebouwd voor de toekomst met respect voor water, bodem en materialen.", "Built for the future with respect for water, soil, and materials."),
+      icon: Recycle,
+      color: "bg-amber-100 text-amber-600",
+    },
+  ];
+
   return (
     <section id="visie" className="py-24 bg-slate-50">
       <div className="container mx-auto px-6">
@@ -39,18 +42,17 @@ export default function Vision() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-teal-600 font-semibold tracking-wide uppercase text-sm">Over Netgenoten</span>
+            <span className="text-teal-600 font-semibold tracking-wide uppercase text-sm">
+              {t('Over Netgenoten', 'About Netgenoten')}
+            </span>
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-3 mb-6 leading-tight">
-              Een nieuw, zelfdragend gebiedsconcept.
+              {t('Een nieuw, zelfdragend gebiedsconcept.', 'A new, self-sustaining area concept.')}
             </h2>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              Netgenoten is een schaalbare woonbuurt gebaseerd op een zelfvoorzienend energienetwerk. 
-              Een buurthub zorgt voor balans in het systeem. Bewoners delen niet alleen energie, 
-              maar ook hun woonomgeving, wat zorgt voor een sterke gemeenschap.
+              {t('Netgenoten is een schaalbare woonbuurt gebaseerd op een zelfvoorzienend energienetwerk. Een buurthub zorgt voor balans in het systeem. Bewoners delen niet alleen energie, maar ook hun woonomgeving, wat zorgt voor een sterke gemeenschap.', 'Netgenoten is a scalable residential neighborhood based on a self-sufficient energy network. A community hub ensures balance in the system. Residents not only share energy but also their living environment, creating a strong community.')}
             </p>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              We koppelen verschillende opgaven in het landschap, waaronder mobiliteit, en bieden 
-              een nieuwe kijk op oplossingen voor netcongestie en de woningbouwopgave.
+              {t('We koppelen verschillende opgaven in het landschap, waaronder mobiliteit, en bieden een nieuwe kijk op oplossingen voor netcongestie en de woningbouwopgave.', 'We link various challenges in the landscape, including mobility, and offer a new perspective on solutions for grid congestion and the housing challenge.')}
             </p>
             
             <div className="grid sm:grid-cols-2 gap-6">
@@ -85,7 +87,7 @@ export default function Vision() {
             {/* Floating Card */}
             <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl max-w-xs hidden md:block">
               <p className="text-slate-800 font-medium italic">
-                "De een heeft meer geluk gehad in het leven dan de ander. Juist in de combinatie van deze mensen kun je met elkaar prettig wonen."
+                {t('"De een heeft meer geluk gehad in het leven dan de ander. Juist in de combinatie van deze mensen kun je met elkaar prettig wonen."', '"Some have had more luck in life than others. It is precisely in the combination of these people that you can live pleasantly together."')}
               </p>
             </div>
           </motion.div>

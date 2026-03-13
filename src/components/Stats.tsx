@@ -1,13 +1,16 @@
 import { motion } from 'framer-motion';
-
-const stats = [
-  { value: "100%", label: "Groene energie", sub: "Paris Proof" },
-  { value: "Net Zero", label: "2050", sub: "The road to carbon zero" },
-  { value: "30%", label: "Meer groen", sub: "Biodiversiteit" },
-  { value: "80%", label: "CO2 Reductie", sub: "Duurzaam bouwen" },
-];
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Stats() {
+  const { t } = useLanguage();
+
+  const stats = [
+    { value: "100%", label: t("Groene energie", "Green energy"), sub: "Paris Proof" },
+    { value: "Net Zero", label: "2050", sub: "The road to carbon zero" },
+    { value: "30%", label: t("Meer groen", "More green"), sub: t("Biodiversiteit", "Biodiversity") },
+    { value: "80%", label: t("CO2 Reductie", "CO2 Reduction"), sub: t("Duurzaam bouwen", "Sustainable building") },
+  ];
+
   return (
     <section className="py-20 bg-slate-900 text-white">
       <div className="container mx-auto px-6">

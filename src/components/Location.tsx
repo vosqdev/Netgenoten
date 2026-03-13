@@ -1,6 +1,17 @@
 import { MapPin, CheckCircle2 } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Location() {
+  const { t } = useLanguage();
+
+  const reasons = [
+    t("Strategische ligging aan rand, goede logistiek", "Strategic location on the edge, good logistics"),
+    t("Koppelkansen met mobiliteit en centrum", "Coupling opportunities with mobility and center"),
+    t("Ruimte voor nieuwe energie-infrastructuur", "Space for new energy infrastructure"),
+    t("Goede landschappelijke inpassing", "Good landscape integration"),
+    t("Verbinding buurthub en woningbouw", "Connection community hub and housing")
+  ];
+
   return (
     <section id="locatie" className="py-24 bg-slate-50">
       <div className="container mx-auto px-6">
@@ -10,7 +21,7 @@ export default function Location() {
               {/* Map of Netherlands */}
               <img 
                 src="https://image2url.com/r2/default/images/1773386510018-7c70f855-9f44-4982-835a-ce1ef776505f.png" 
-                alt="Kaart van Nederland" 
+                alt={t("Kaart van Nederland", "Map of the Netherlands")}
                 className="w-full h-full object-contain p-4"
                 referrerPolicy="no-referrer"
               />
@@ -29,19 +40,13 @@ export default function Location() {
           </div>
           
           <div className="order-1 lg:order-2">
-            <h2 className="text-4xl font-bold text-slate-900 mb-6">Waarom deze locatie?</h2>
+            <h2 className="text-4xl font-bold text-slate-900 mb-6">{t('Waarom deze locatie?', 'Why this location?')}</h2>
             <p className="text-lg text-slate-600 mb-8">
-              Vaak bieden randen of oude bedrijfslocaties een unieke kans voor regeneratieve gebiedsontwikkeling. De strategische ligging combineert het beste van twee werelden: de nabijheid van voorzieningen en de rust van het landschap.
+              {t('Vaak bieden randen of oude bedrijfslocaties een unieke kans voor regeneratieve gebiedsontwikkeling. De strategische ligging combineert het beste van twee werelden: de nabijheid van voorzieningen en de rust van het landschap.', 'Often edges or old business locations offer a unique opportunity for regenerative area development. The strategic location combines the best of both worlds: the proximity of amenities and the tranquility of the landscape.')}
             </p>
             
             <ul className="space-y-4">
-              {[
-                "Strategische ligging aan rand, goede logistiek",
-                "Koppelkansen met mobiliteit en centrum",
-                "Ruimte voor nieuwe energie-infrastructuur",
-                "Goede landschappelijke inpassing",
-                "Verbinding buurthub en woningbouw"
-              ].map((item, idx) => (
+              {reasons.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-teal-500 shrink-0 mt-0.5" />
                   <span className="text-slate-700 font-medium">{item}</span>
@@ -50,9 +55,9 @@ export default function Location() {
             </ul>
 
             <div className="mt-10 p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
-              <h4 className="font-bold text-slate-900 mb-2">Impuls aan de omgeving</h4>
+              <h4 className="font-bold text-slate-900 mb-2">{t('Impuls aan de omgeving', 'Impulse to the environment')}</h4>
               <p className="text-slate-600 text-sm">
-                Een netgenoten plan voorziet in nieuwe natuurverbindingen, inrichting energiepositief, en duurzame gemeenschapsvorming die uitstraalt naar de omgeving.
+                {t('Een netgenoten plan voorziet in nieuwe natuurverbindingen, inrichting energiepositief, en duurzame gemeenschapsvorming die uitstraalt naar de omgeving.', 'A Netgenoten plan provides for new nature connections, energy-positive design, and sustainable community building that radiates to the environment.')}
               </p>
             </div>
           </div>
