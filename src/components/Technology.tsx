@@ -56,7 +56,7 @@ export default function Technology() {
                 <div>
                   <h3 className="text-xl font-bold mb-2">{t('Mobiliteit, Solarparking en laadinfrastructuur', 'Mobility, Solar Parking and Charging Infrastructure')}</h3>
                   <p className="text-slate-400">
-                    {t("De buurthub fungeert als energiehub met solarparking en laadinfra voor deelvervoer. Auto's als batterij voor de wijk.", "The community hub acts as an energy hub with solar parking and charging infrastructure for shared transport. Cars as a battery for the neighborhood.")}
+                    {t("De buurthub fungeert als energiehub met solarparking en laadinfra voor auto's ook voor de woonbuurt. Een 'buurtsuper' als batterij voor de wijk.", "The community hub acts as an energy hub with solar parking and charging infrastructure for cars also for the residential neighborhood. A 'neighborhood supermarket' as a battery for the district.")}
                   </p>
                 </div>
               </div>
