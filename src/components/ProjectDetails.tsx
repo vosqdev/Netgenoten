@@ -15,9 +15,14 @@ export default function ProjectDetails() {
           <h2 className="text-4xl font-bold text-slate-900 mt-3 mb-6">
             {t('Pilot: casestudy Bergen & Dronten', 'Pilot: Case Study Bergen & Dronten')}
           </h2>
-          <p className="text-lg text-slate-600">
-            {t('De eerste toepassing van het Netgenoten concept. Een tweetal strategische locaties in Noord Holland en Flevoland aan de rand van de dorpen waar wonen, natuur en energie samenkomen.', 'The first application of the Netgenoten concept. Two strategic locations in North Holland and Flevoland on the edge of the villages where living, nature and energy come together.')}
-          </p>
+          <div className="text-lg text-slate-600 space-y-4">
+            <p>
+              {t('De eerste toepassing van het Netgenoten concept. Een tweetal strategische locaties in Noord Holland en Flevoland aan de rand van de dorpen waar wonen, natuur en energie samenkomen.', 'The first application of the Netgenoten concept. Two strategic locations in North Holland and Flevoland on the edge of the villages where living, nature and energy come together.')}
+            </p>
+            <p>
+              {t('In de komende periode maken we afspraken over de precieze inzet. Door specifiek naar de fasering van de gebiedsontwikkeling te kijken, passen we innovaties toe in de ruimtelijke planketen.', 'In the coming period, we will make agreements about the precise deployment. By looking specifically at the phasing of the area development, we apply innovations in the spatial planning chain.')}
+            </p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

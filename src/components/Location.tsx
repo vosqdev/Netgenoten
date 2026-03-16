@@ -40,7 +40,7 @@ export default function Location() {
           </div>
           
           <div className="order-1 lg:order-2">
-            <h2 className="text-4xl font-bold text-slate-900 mb-6">{t('Waarom deze locatie?', 'Why this location?')}</h2>
+            <h2 className="text-4xl font-bold text-slate-900 mb-6">{t('Waar gaan we gebiedsgericht aan de slag?', 'Where are we working area-oriented?')}</h2>
             <p className="text-lg text-slate-600 mb-8">
               {t('Vaak bieden randen of oude bedrijfslocaties een unieke kans voor regeneratieve gebiedsontwikkeling. De strategische ligging combineert het beste van twee werelden: de nabijheid van voorzieningen en de rust van het landschap.', 'Often edges or old business locations offer a unique opportunity for regenerative area development. The strategic location combines the best of both worlds: the proximity of amenities and the tranquility of the landscape.')}
             </p>

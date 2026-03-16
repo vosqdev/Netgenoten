@@ -103,6 +103,45 @@ export default function NetworkGrid() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-24 bg-slate-50 rounded-3xl p-8 md:p-12 border border-slate-100"
+        >
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center md:text-left">
+              {t('Welke thema’s, innovaties en vraagstukken pakken we op bij Netgenoten?', 'Which themes, innovations, and issues do we address at Netgenoten?')}
+            </h3>
+            <ul className="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-10">
+              {[
+                t('Integrale toekomstbestendigheid (CO2-reductie, klimaatadaptatie, water-, bodem- en energievraagstukken, gezondheid).', 'Integral future-proofing (CO2 reduction, climate adaptation, water, soil and energy issues, health).'),
+                t('Industriële en conceptuele woningbouw.', 'Industrial and conceptual housing construction.'),
+                t('Digitalisering van de energieketen.', 'Digitalization of the energy chain.'),
+                t('Integrale ecoketens en het schakelen tussen schaalniveaus.', 'Integral eco-chains and switching between scale levels.'),
+                t('Ruimtelijke kwaliteit en sociale duurzaamheid.', 'Spatial quality and social sustainability.'),
+                t('Samenwerkings- en energie gemeenschapsvormen.', 'Collaboration and energy community forms.')
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-start gap-3 text-slate-700">
+                  <div className="w-2 h-2 rounded-full bg-teal-500 mt-2 shrink-0" />
+                  <span className="leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-8 border-t border-slate-200">
+              <p className="text-lg font-medium text-slate-900">
+                {t('Benieuwd naar de mogelijkheden?', 'Curious about the possibilities?')}
+              </p>
+              <a 
+                href="#contact" 
+                className="inline-flex items-center justify-center px-6 py-3 bg-teal-600 text-white font-medium rounded-xl hover:bg-teal-700 transition-colors"
+              >
+                {t('Neem contact met ons op!', 'Contact us!')}
+              </a>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
