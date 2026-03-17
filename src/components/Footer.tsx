@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <p>&copy; 2026 Netgenoten | VOVON. {t('Alle rechten voorbehouden.', 'All rights reserved.')}</p>
+          <p>&copy; 2026 Netgenoten | {t('Alle rechten voorbehouden.', 'All rights reserved.')}</p>
           <div className="flex gap-6">
             <button onClick={() => setActiveModal('privacy')} className="hover:text-white transition-colors">Privacy</button>
             <button onClick={() => setActiveModal('cookies')} className="hover:text-white transition-colors">Cookies</button>
