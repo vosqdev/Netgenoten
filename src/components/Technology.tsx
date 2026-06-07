@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { Battery, Zap, Car, Share2 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import EnergyFlow from './EnergyFlow';
 
 export default function Technology() {
   const { t } = useLanguage();
@@ -95,8 +94,6 @@ export default function Technology() {
             </div>
           </motion.div>
         </div>
-
-        <EnergyFlow />
       </div>
     </section>
   );
