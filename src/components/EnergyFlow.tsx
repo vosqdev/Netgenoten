@@ -12,10 +12,7 @@ export default function EnergyFlow() {
       viewport={{ once: true }}
       className="w-full bg-white rounded-3xl p-6 md:p-10 shadow-xl border border-slate-100 overflow-x-auto mt-20"
     >
-      <div className="mb-10">
-        <h3 className="text-2xl font-bold text-slate-900">{t('Systeemintegratie', 'System Integration')}</h3>
-        <p className="text-slate-500">{t('Visuele weergave van de energiestromen en crossovers.', 'Visual representation of energy flows and crossovers.')}</p>
-      </div>
+
 
       <div className="min-w-[1000px] flex justify-between items-stretch gap-6">
         {/* Column 1: Source */}
@@ -103,13 +100,12 @@ export default function EnergyFlow() {
             <div className="absolute -right-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-red-500 border-2 border-white shadow-sm"></div>
           </div>
           <div className="bg-blue-500 text-white p-4 rounded-xl shadow-md flex items-center gap-3 relative">
-            <Flame className="w-5 h-5 text-orange-200 shrink-0" />
+            <div className="flex gap-1 shrink-0">
+              <Flame className="w-5 h-5 text-orange-200" />
+              <Database className="w-5 h-5 text-blue-200" />
+            </div>
             <span className="text-sm font-bold leading-tight">{t('warmte opslag', 'heat storage')}</span>
             <div className="absolute -right-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-red-500 border-2 border-white shadow-sm"></div>
-          </div>
-          <div className="bg-blue-700 text-white p-4 rounded-xl shadow-md flex items-center gap-3 relative">
-            <Database className="w-5 h-5 text-blue-300 shrink-0" />
-            <span className="text-sm font-bold leading-tight">{t('Borg / storage', 'Deposit / storage')}</span>
           </div>
         </div>
 
