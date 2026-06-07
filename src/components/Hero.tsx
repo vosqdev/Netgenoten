@@ -10,9 +10,10 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2301&auto=format&fit=crop"
+          src="https://cdn.phototourl.com/free/2026-06-07-97d2eb89-bc3d-4f49-a808-3b3f64939085.png"
           alt="Modern sustainable architecture"
           className="w-full h-full object-cover"
+          referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900/80" />
       </div>
