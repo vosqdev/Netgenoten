@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import VideoSection from './components/VideoSection';
 import About from './components/About';
 import Vision from './components/Vision';
 import NetworkGrid from './components/NetworkGrid';
@@ -19,6 +20,7 @@ function App() {
         <Navbar />
         <main>
           <Hero />
+          <VideoSection />
           <About />
           <Vision />
           <NetworkGrid />
