@@ -8,7 +8,6 @@ import Technology from './components/Technology';
 import EnergySystemVisualization from './components/EnergySystemVisualization';
 import TechnicalConcept from './components/TechnicalConcept';
 import ProjectDetails from './components/ProjectDetails';
-import Partners from './components/Partners';
 import Process from './components/Process';
 import Stats from './components/Stats';
 import Location from './components/Location';
@@ -33,7 +32,6 @@ function App() {
           <Process />
           <Stats />
           <Location />
-          <Partners />
         </main>
         <Footer />
       </div>
