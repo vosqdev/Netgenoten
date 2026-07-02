@@ -20,7 +20,10 @@ export default function ProjectDetails() {
               {t('De eerste toepassing van het Netgenoten concept. Een tweetal strategische locaties in Noord Holland en Flevoland aan de rand van de dorpen waar wonen, natuur en energie samenkomen.', 'The first application of the Netgenoten concept. Two strategic locations in North Holland and Flevoland on the edge of the villages where living, nature and energy come together.')}
             </p>
             <p>
-              {t('In de komende periode maken we afspraken over de precieze inzet. Door specifiek naar de fasering van de gebiedsontwikkeling te kijken, passen we innovaties toe in de ruimtelijke planketen.', 'In the coming period, we will make agreements about the precise deployment. By looking specifically at the phasing of the area development, we apply innovations in the spatial planning chain.')}
+              {t(
+                'In de komende periode maken we met de gemeenten afspraken over de precieze inzet. Het begint met het idee en de intake/omgevingstafel. Door specifiek naar de fasering van de gebiedsontwikkeling te kijken, passen we innovaties toe in de ruimtelijke planketen.',
+                'In the coming period, we will make agreements with the municipalities about the precise deployment. It starts with the idea and the intake/environment table. By looking specifically at the phasing of the area development, we apply innovations in the spatial planning chain.'
+              )}
             </p>
           </div>
         </div>

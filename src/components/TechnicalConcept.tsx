@@ -64,7 +64,7 @@ export default function TechnicalConcept() {
   const designPrinciples = [
     {
       icon: <Minimize2 className="w-5 h-5 text-teal-600" />,
-      text: t('Sub-eiland om energietransport te minimaliseren', 'Sub-island design to minimize energy transport distances.')
+      text: t('Buurtschap om energietransport te minimaliseren', 'Neighborhood design to minimize energy transport distances.')
     },
     {
       icon: <Battery className="w-5 h-5 text-teal-600" />,
@@ -105,8 +105,8 @@ export default function TechnicalConcept() {
             </h2>
             <p className="text-slate-600 text-base md:text-lg">
               {t(
-                'Een dergelijk bewust ontworpen systeem – ook wel bekend als een energie-eiland – bestaat uit een slimme en geïntegreerde combinatie van:',
-                'Such a consciously designed system – also known as an energy island – consists of a smart and integrated combination of:'
+                'Een dergelijk bewust ontworpen systeem – ook wel bekend als netgenoten – bestaat uit een slimme en geïntegreerde combinatie van:',
+                'Such a consciously designed system – also known as netgenoten – consists of a smart and integrated combination of:'
               )}
             </p>
           </motion.div>
@@ -179,7 +179,7 @@ export default function TechnicalConcept() {
               <div>
                 <h3 className="text-xl font-bold mb-5 flex items-center gap-2 text-teal-400">
                   <LineChart className="w-5 h-5" />
-                  {t('Hoofdpunten Net Ontwerp', 'Key Grid Design Principles')}
+                  {t('Hoofdpunten ontwerp', 'Key Design Principles')}
                 </h3>
                 <ul className="space-y-4">
                   {designPrinciples.map((principle, index) => (
