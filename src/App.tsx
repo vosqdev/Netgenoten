@@ -6,6 +6,7 @@ import Vision from './components/Vision';
 import NetworkGrid from './components/NetworkGrid';
 import Technology from './components/Technology';
 import EnergySystemVisualization from './components/EnergySystemVisualization';
+import GridChainVisualization from './components/GridChainVisualization';
 import TechnicalConcept from './components/TechnicalConcept';
 import ProjectDetails from './components/ProjectDetails';
 import Partners from './components/Partners';
@@ -28,6 +29,7 @@ function App() {
           <NetworkGrid />
           <Technology />
           <EnergySystemVisualization />
+          <GridChainVisualization />
           <TechnicalConcept />
           <ProjectDetails />
           <Process />

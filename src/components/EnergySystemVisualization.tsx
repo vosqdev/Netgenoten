@@ -102,23 +102,23 @@ export default function EnergySystemVisualization() {
     },
     seizoen: {
       nl: {
-        title: 'Seizoensopslag (H2 / Moleculen)',
+        title: 'Seizoensopslag (H2 & Warmte)',
         subtitle: 'Langetermijn Energiebuffer',
-        description: 'Seizoensoverstijgende opslag in de vorm van waterstof of moleculaire dragers om de beruchte winter-dip op te vangen.',
+        description: 'Seizoensoverstijgende opslag in de vorm van waterstof, moleculaire dragers en thermische opslag (warmtebuffer) om de winter-dip op te vangen.',
         bullets: [
-          'Slaat zomeroverschotten op voor gebruik in donkere wintermaanden',
-          'Geproduceerd via lokale elektrolyse bij hoge zonne-opbrengst',
-          'Biedt ultieme winterzekerheid voor het energiesysteem'
+          'Slaat zomeroverschotten (elektriciteit én warmte) op voor de wintermaanden',
+          'Geproduceerd via lokale elektrolyse en thermische zonnecollectoren of bodemlussen',
+          'Biedt ultieme winter- en warmtezekerheid voor het energiesysteem'
         ]
       },
       en: {
-        title: 'Seasonal Storage (H2 / Molecules)',
+        title: 'Seasonal Storage (H2 & Heat)',
         subtitle: 'Long-term Energy Buffer',
-        description: 'Multi-month storage in the form of hydrogen or molecular carriers to bridge the notorious winter energy deficit.',
+        description: 'Multi-month storage in the form of hydrogen, molecular carriers, and thermal storage (heat buffer) to bridge the winter energy deficit.',
         bullets: [
-          'Stores summer excess for use in dark winter months',
-          'Produced via local electrolysis during peak solar output',
-          'Provides ultimate winter security for the autonomous microgrid'
+          'Stores summer excess (both electricity and heat) for use in dark winter months',
+          'Produced via local electrolysis, solar thermal collectors, or geothermal loops',
+          'Provides ultimate winter power and heating security for the autonomous microgrid'
         ]
       }
     },
@@ -214,7 +214,7 @@ export default function EnergySystemVisualization() {
               {t('Interactieve Flowchart', 'Interactive Flowchart')}
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">
-              {t('Visualisatie Energie-eiland', 'Energy Island Visualization')}
+              {t('Visualisatie Energie-systeem', 'Energy System Visualization')}
             </h2>
             <p className="text-slate-400 text-base md:text-lg">
               {t(
@@ -380,7 +380,7 @@ export default function EnergySystemVisualization() {
                     }`}
                   >
                     <Database className={`w-5 h-5 ${selectedNode === 'seizoen' ? 'text-white' : 'text-indigo-400'}`} />
-                    <span className="text-xs font-bold whitespace-nowrap">{t('Seizoensopslag (H2)', 'Seasonal Buffer')}</span>
+                    <span className="text-xs font-bold whitespace-nowrap">{t('Seizoensopslag (H2 & Warmte)', 'Seasonal Buffer (H2 & Heat)')}</span>
                     {activeMode === 'summer' && (
                       <span className="text-[10px] bg-indigo-500/20 text-indigo-300 font-mono px-1.5 py-0.5 rounded animate-pulse">{t('Laden...', 'Storing...')}</span>
                     )}
