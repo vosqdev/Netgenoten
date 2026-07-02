@@ -266,7 +266,7 @@ export default function EnergySystemVisualization() {
               <span className="text-slate-300">
                 {activeMode === 'summer' 
                   ? t('ZON-OPWEK EN BUFFERS VULLEN', 'SOLAR-POWERED GENERATION & STORING') 
-                  : t('ONTOMPELD EN SCHONE WINTER-DECKING', 'DISCHARGING & WINTER BUFFER USAGE')}
+                  : t('SEIZOENSOPSLAG EN BUFFERING', 'SEASONAL STORAGE & BUFFERING')}
               </span>
             </div>
 
