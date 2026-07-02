@@ -5,6 +5,7 @@ import About from './components/About';
 import Vision from './components/Vision';
 import NetworkGrid from './components/NetworkGrid';
 import Technology from './components/Technology';
+import TechnicalConcept from './components/TechnicalConcept';
 import ProjectDetails from './components/ProjectDetails';
 import Partners from './components/Partners';
 import Process from './components/Process';
@@ -25,6 +26,7 @@ function App() {
           <Vision />
           <NetworkGrid />
           <Technology />
+          <TechnicalConcept />
           <ProjectDetails />
           <Process />
           <Stats />
